@@ -8,12 +8,12 @@ float square(float num) {
 
 struct Point readPoint(int num){
   struct Point newPoint;
-  printf("Enter x-coordinate of point %d: ", num);
-  scanf("%f\n", &(newPoint.x));
+  printf("\n\nEnter x-coordinate of point %d: ", num);
+  scanf("%f", &(newPoint.x));
   printf("Enter y-coordinate of point %d: ", num);
-  scanf("%f\n", &(newPoint.y));
+  scanf("%f", &(newPoint.y));
   printf("Enter z-coordinate of point %d: ", num);
-  scanf("%f\n\n", &(newPoint.z));
+  scanf("%f", &(newPoint.z));
 
   return newPoint;
 }

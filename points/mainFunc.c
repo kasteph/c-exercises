@@ -10,7 +10,7 @@ int main(void) {
   float distanceCtoA;
   float area;
   
-  printf("Calculating a distance\n");
+  printf("\n\nCalculating a distance\n");
 
   pointA = readPoint(1);
   pointB = readPoint(2);
@@ -22,11 +22,11 @@ int main(void) {
   printf("Calculating a triangle\n");
 
   distanceBtoC = distance(pointB, pointC);
-  distanceCtoA = distance(pointA, pointB);
+  distanceCtoA = distance(pointC, pointA);
 
   area = areaTriangle(distanceAtoB, distanceBtoC, distanceCtoA);
 
-  printf("The area of triangle 123 is: %f\n", area);
+  printf("The area of triangle 123 is: %f\n\n\n", area);
 
   return 0;
 }
