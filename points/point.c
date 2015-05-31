@@ -9,26 +9,26 @@ float square(float num) {
 struct Point readPoint(int num){
   struct Point newPoint;
   printf("Enter x-coordinate of point %d: ", num);
-  scanf("%f\n", &newPoint.x);
+  scanf("%f\n", &(newPoint.x));
   printf("Enter y-coordinate of point %d: ", num);
-  scanf("%f\n", &newPoint.y);
+  scanf("%f\n", &(newPoint.y));
   printf("Enter z-coordinate of point %d: ", num);
-  scanf("%f\n\n", &newPoint.z);
+  scanf("%f\n\n", &(newPoint.z));
 
   return newPoint;
 }
 
 float distance(struct Point pointA, struct Point pointB) {
   float xDistance, yDistance, zDistance;
-  float distance;
+  float result;
 
   xDistance = square(pointB.x - pointA.x);
   yDistance = square(pointB.y - pointA.y);
   zDistance = square(pointB.z - pointA.z);
 
-  distance = sqrt(xDistance + yDistance + zDistance);
+  result = sqrt(xDistance + yDistance + zDistance);
 
-  return distance;
+  return result;
 }
 
 float areaTriangle(float edgeA, float edgeB, float edgeC){
